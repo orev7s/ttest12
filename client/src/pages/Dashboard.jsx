@@ -149,7 +149,7 @@ export default function Dashboard() {
                   </button>
                 ) : (
                   <Link
-                    to={`/upgrade?plan=${key}`}
+                    to={`/payment?plan=${key}`}
                     className="block w-full text-center py-2 rounded font-medium bg-black text-white hover:bg-gray-800 transition"
                   >
                     {user?.plan === 'free' || (plans[user?.plan]?.price || 0) < plan.price
